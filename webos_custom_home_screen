@@ -54,7 +54,7 @@ check_target_sums() {
     # there are no unexpected results. Old versions of WebOS or updates may cause files to change, which will break this script.
     case $1 in
     "ai_board")
-        AI_BOARD_SUM="a1c448041bbbe30ab0986b8653a08b666185aca50fc91200b98a9b79ddeb0a6f3baef7f811b0a9f71ddd9814dfd471c1612e7e12de68e84fc794a231a3b6f0e3  /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/AIBoard.qml"
+        AI_BOARD_SUM="4cff08f7438bc55fe6f5010aebc4132c3da3a083dbf8baa7490c15a18a79be15b122516b579a5b0c2fcaa6359b712f3bf664975e87cfffec66efc9667fe14e5e  /usr/palm/applications/com.webos.app.home/qml/UserInterfaceLayer/Containers/Main/AIBoard.qml"
         AI_BOARD_CHECK=$(sha512sum $AI_BOARD_SOURCE)
 
         if [ "$AI_BOARD_SUM" != "$AI_BOARD_CHECK" ]; then
